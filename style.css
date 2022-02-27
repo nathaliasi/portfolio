@@ -1,0 +1,306 @@
+* {
+  font-family: monospace;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+
+.tudo {
+  height: auto;
+  width: auto;
+  
+}
+
+
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saudacao {
+  color: white;
+  width: 100%; /**/
+  line-height: 30px;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 150px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.saudacao-h1 {
+  color: beige;
+  position: relative;
+  font-size: 4ch;
+  text-align:justify;
+  
+  
+}
+
+.apresentacao {
+  font-size: 3ch;
+  color: rgba(255, 231, 231, 1);
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+
+.foto {
+  max-width: 160px;
+  border-radius: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img{
+  float: left;
+  
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.titulo-principal {
+  font-weight: 300;
+  font-size: 6ch;
+  color: rgba(255, 231, 231, 0.5);
+  text-decoration: overline;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.pastas {
+  display: grid;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 4ch;
+}
+
+.links,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 231, 231, 0.6);
+  padding: 5px;
+  font-size: 2.5ch;
+}
+
+.links a:hover {
+  display: inline;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #1a1a40, #270082, #7a0bc0, #fa58b6);
+  background-size: 300%;
+  animation: colors 15s ease infinite;
+}
+
+.lista{
+  list-style: none; 
+}
+
+.contato{
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.div-apresentacao{
+  width: auto;
+  height: auto;
+}
+
+
+
+/*.barra-rodape {
+  height: 1px;
+  background: rgba(255, 231, 231, 0.3);
+}
+
+.rodape {
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  content: normal;
+}*/
+  
+
+
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1000px) {
+  .saudacao-h1{
+    text-align: center;
+  }
+}
+
+/*
+@media (max-width: 850px) {
+  .cabecalho h3 {
+    font-size: 3ch;
+    text-align: center;
+    position: absolute;
+    word-break: normal;
+    margin-left: -50px;
+    margin-right: 50px;
+    padding-top: 10px;
+  }
+
+  .pastas {
+    font-size: 5ch;
+  }
+
+  .titulo-principal h1 {
+    font-size: 8ch;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .cabecalho h3 {
+    font-size: 5ch;
+    margin-top: 10px;
+  }
+
+  .pastas {
+    font-size: 5ch;
+  }
+
+  .titulo-principal h1 {
+    font-size: 8ch;
+  }
+
+  .cabecalho h1 {
+    font-size: 5ch;
+  }
+}
+
+@media (min-width: 1450px) {
+  .titulo-principal h1 {
+    font-size: 8ch;
+  }
+
+  .pastas {
+    font-size: 5ch;
+  }
+
+  .cabecalho h1 {
+    font-size: 5ch;
+  }
+
+  .cabecalho h3 {
+    font-size: 4ch;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 315px) {
+  .titulo-principal h1 {
+    font-size: 5ch;
+  }
+
+  .pastas {
+    font-size: 3.5ch;
+  }
+
+  .cabecalho h1 {
+    font-size: 5ch;
+  }
+
+  .cabecalho h3 {
+    font-size: 2.5ch;
+    margin-top: 40px;
+  }
+}
+
+/*.titulo-principal{
+  height: 10em;
+  position: relative;
+}*/
+
+/*.titulo-principal h1{
+  /*margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 40%);*/
+
+/*.pastas{
+  font-family: monospace;
+  font-size: 1.3rem;
+  color:rgba(255, 231, 231, 1.0) ;
+  position: fixed;
+  bottom: 220px;
+  left: 630px;
+}
+
+.links,a{
+  text-decoration: none;
+  list-style: none;
+  color: rgba(255, 231, 231, .6);
+  margin-top: 5px;
+}
+
+.links a:hover{
+  display: inline;
+  color: white;
+  font-size: larger;
+}
+
+.cabecalho h1 {
+  color: beige;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+.cabecalho h3 {
+  font-size: 3ch;
+  color: rgba(255, 231, 231, 1);
+  position: fixed;
+  top: 70px;
+  left: 80px;
+}
+
+.titulo-principal h1 {
+  font-family: monospace;
+  font-weight: 300;
+  font-size: 8ch;
+  color: rgba(255, 231, 231, 0.5);
+  text-decoration: overline;
+  border-radius: 10px;
+  display: grid;
+}*/
